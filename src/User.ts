@@ -8,6 +8,10 @@ class User {
     }
 
     constructor(){
-
+        this.name = faker.name.firstName();
+        this.location = {
+            lat: parseFloat(faker.adderess.latitude()),
+            lng: parseFloat(faker.address.longitude()),
+        }
     }
 }
